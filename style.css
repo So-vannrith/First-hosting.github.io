@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "ABeeZee";
+  background-color: azure;
+}
+.menu {
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+.menu ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgb(0, 179, 0);
+}
+.menu li {
+  float: left;
+}
+.menu #login,#to-right {
+  color:#0c35c7e2;
+  float: right;
+  background-color: rgb(139, 139, 14);
+}
+.menu li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 16px 16px;
+  font-size: 20px;
+  /* text-align: center; */
+}
+
+li a:hover:not(#to-right) {
+  background-color: rgb(86, 86, 82);
+}
+
+.content {
+  margin: 100px 10px 20px 20px;
+}
+.content h2 {
+  margin-bottom: 10px;
+}
+.content button {
+  background-color: black;
+  color: rgb(243, 247, 242);
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.content button:hover {
+  background-color: rgba(0, 0, 0, 0.747);
+  color: rgb(8, 239, 243);
+  box-shadow: 0px 0px 3px 0.5px rgb(26, 255, 255);
+}
+.content p {
+  padding: 15px 0 0 15px;
+}
+.pic{
+  background-color: rgb(66, 66, 52);
+  width: 100%;
+  height: 600px;
+  padding: 0 50px;
+  
+  
+}
+.pic img{
+  margin-bottom: 0;
+  padding-top: 0;
+  width:100%;
+  height:100%;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 370px;
+  background-color: rgb(143, 136, 136);
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(22, 3, 166);
+}
+article {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-color: rgb(254, 252, 250);
+  height: 370px;
+}
+article a {
+  text-decoration: underline;
+  color: blue;
+}
+
+section {
+  display: flex;
+  
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #373636;
+  padding: 25px;
+  text-align: center;
+  color: rgb(249, 248, 248);
+}
+.logo img {
+  margin: 20px 10px 20px 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Responsive layout - make the two colums/boxes stack on top of each other
+  instead of next to each other, on small screens
+*/
+@media (max-width: 600px) {
+  section {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+    height: auto;
+    background-color: rgb(143, 136, 136);
+    padding: 20px;
+  }
+  article {
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(254, 252, 250);
+    height: auto;
+  }
+  .menu li a {
+    padding: 10px 10px;
+    font-size: 13px;
+    display: block;
+    color: rgb(47, 42, 42);
+    text-decoration: none;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  p {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .menu li a {
+    display: block;
+    color: rgb(47, 42, 42);
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  p {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 10px;
+    background-color: #373636;
+    padding: 10px;
+    text-align: center;
+    color: rgb(249, 248, 248);
+}
